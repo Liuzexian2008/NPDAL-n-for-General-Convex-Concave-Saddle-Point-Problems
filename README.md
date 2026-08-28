@@ -16,27 +16,27 @@ The code is provided to reproduce the numerical results reported in the manuscri
 ## 1. Problem Formulation
 
 We consider the following general convex-concave saddle-point problem:
-
-\[
+```math
+$$
 \min_{x\in\mathbb{R}^q}\max_{y\in\mathbb{R}^p}
 \mathcal{L}(x,y)
 =
 g(x)+\Phi(x,y)-f^*(y).
-\]
-
-where \(g:\mathbb{R}^q\rightarrow(-\infty,+\infty]\) and
-\(f^*:\mathbb{R}^p\rightarrow(-\infty,+\infty]\) are proper, closed,
+$$
+```
+where $g:\mathbb{R}^q\rightarrow(-\infty,+\infty]$ and
+$f^*:\mathbb{R}^p\rightarrow(-\infty,+\infty]$ are proper, closed,
 and convex extended real-valued functions.
 
 The coupling function
-
-\[
-\Phi:\operatorname{dom}(g)\times\operatorname{dom}(f^*)
+```math
+$$
+\Phi:dom(g)\times dom(f^*)
 \rightarrow\mathbb{R}
-\]
-
-is continuously differentiable, convex with respect to \(x\) for each
-fixed \(y\), and concave with respect to \(y\) for each fixed \(x\).
+$$
+```
+is continuously differentiable, convex with respect to $x$ for each
+fixed $y$, and concave with respect to $y$ for each fixed $x$.
 
 The proposed **NPDAL-n** algorithm is designed to solve this class of
 general convex-concave saddle-point problems by incorporating two convex
